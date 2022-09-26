@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
   font-family: "Open Sans", sans-serif;
   width: 90%;
@@ -6,8 +7,8 @@ body {
 #name {
   border-bottom: 1px solid lightblue;
 }
-#heading {
-  font-family: "Sacramento", cursive;
+.heading {
+  font-family: 'Lato', sans-serif;
   text-transform: none;
   font-weight: 400;
   font-size: 3em !important;
@@ -21,10 +22,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   border-radius: 15px;
-
   background-color: #f3f4f6;
+  padding: 40px;
+  font-size: 20px;
 }
-.heading {
+.section-heading {
   text-align: center;
 }
 #intro {
@@ -41,22 +43,32 @@ body {
   width: 33.33%;
   height: 33.33%;
 }
-#projects{
+#projects {
   margin-bottom: 20px;
 }
 #intro p {
   width: 66.66%;
   font-size: 21px;
 }
-#rightSection {
+.rightSection {
   text-align: right;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.rightSection a {
+  margin: 0 20px;
+  cursor: pointer;
+  color: white;
+}
+a {
+  text-decoration: none;
 }
 nav {
   background-color: #41b0bf !important;
   color: white;
   margin-bottom: 20px;
 }
-nav p{
+nav p {
   margin: 0;
   padding: 10px;
 }
@@ -66,13 +78,23 @@ nav p{
   background-color: #f3f4f6;
   text-align: center;
   padding-bottom: 15px;
+  margin-top: 20px;
+}
+.home-page-card {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f3f4f6;
+  text-align: center;
+  margin-top: 20px;
+  padding: 50px;
 }
 footer {
   text-align: center;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
-.socialMediaImages{
-margin:5px
+.socialMediaImages {
+  margin: 5px;
 }
 .customButton {
   height: 35px;
@@ -81,17 +103,23 @@ margin:5px
   border-radius: 15px;
   color: white;
   border: none;
+  margin: 0 5px;
+  padding: 5px 10px;
 }
-.cardHeading{
-   font-size: 18px;
-   font-weight: bold;
+.cardHeading {
+  font-size: 18px;
+  font-weight: bold;
 }
-button:hover{
+button:hover {
   background-color: #054f59 !important;
   transition: 0.5s;
 }
-#cardTechStack{
- font-weight: bold;
+#cardTechStack {
+  font-weight: bold;
+}
+
+#projects ,#techSimilarWIth ,#blogs{
+margin-top: 60px;
 }
 @media only screen and (max-width: 600px) {
   #skills {
@@ -110,5 +138,12 @@ button:hover{
   }
   .customButton {
     height: 30px;
+  }
+  .heading{
+    font-size: 2em !important;
+  }
+  .rightSection{
+    padding: 10px 0;
+    font-size: 15px;
   }
 }
