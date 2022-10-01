@@ -67,6 +67,7 @@ nav {
   background-color: #41b0bf !important;
   color: white;
   margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
 }
 nav p {
   margin: 0;
